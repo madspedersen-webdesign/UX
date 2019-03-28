@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Untitled document</title>
+    <meta name="description" content="Here you add the description of your content">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navigation. Inspireret af kode udleveret Michelle -->
+    <header>
+        <section id="logo-burger">
+            <a id="logo" href="index.html"><img src="images/Logo.png" alt="Medova Logo"></a>
+            <label for="toggle">
+                <i class="fas fa-user"></i>
+            </label>
+        </section>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <li><a href="#">Pensum</a></li>
+                <li><a href="#">Factum Books</a></li>
+                <li><a href="#">Foreslag</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <!-- Navigation slut -->
+
+    <div class="search-box">
+        <input type="text" name="" class="search-txt" placeholder="Søg bog" />
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+
+    <section class="foreslag">
+        <h1>Foreslag til dig</h1>
+        <p class="line-break-1"></p>
+        <div class="boeger">
+            <a href="#">
+                <img src="images/bog1.jpg">
+            </a>
+            <a href="bog1.html">
+                <img src="images/bog2.jpg">
+            </a>
+            <a href="#">
+                <img src="images/bog3.jpg">
+            </a>
+        </div>
+        <p class="line-break-2"></p>
+    </section>
+
+    <section class="tider">
+        <h1>Åbent</h1>
+        <div class="prik"></div>
+        <p class="line-break-3"></p>
+        <h2>09:00 - 16:00</h2>
+        <a class="pil" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
