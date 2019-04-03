@@ -1,0 +1,59 @@
+/**
+* file: xml-seek-word.css
+**/
+
+/* responsivt grid */
+
+.indhold {
+  /* @url: https://responsivedesign.is/patterns/css-grid-responsive-layout/ */
+  display: grid;
+  /* Display as a Grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* repeat = as many times as you can fit */
+  /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+  /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+  grid-gap: .5rem;
+  grid-row-gap: .5rem;
+}
+
+.bog {
+  padding: 10px;
+  background-color: rgba(255,159,15,.90);
+}
+
+/* layout */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(images/natViby2_web.jpg);
+  background-size: cover;
+  /*background-color: #000;*/
+}
+
+header {
+  display: block;
+  width: 100%;
+  background-color: rgba(0,0,0,.10);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: .5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  max-width: 23rem;
+}

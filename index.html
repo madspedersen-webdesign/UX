@@ -10,12 +10,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <!-- Navigation. Inspireret af kode udleveret Michelle -->
+    <!-- Navigation. Inspireret af kode udleveret af Michelle -->
     <header>
         <section id="logo-burger">
             <a id="logo" href="index.html"><img src="images/Logo.png" alt="Medova Logo"></a>
@@ -27,7 +29,7 @@
             <input type="checkbox" id="toggle" class="hidden">
             <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
             <ul id="main-nav">
-                <li><a href="#">Pensum</a></li>
+                <li><a href="pensum.html">Pensum</a></li>
                 <li><a href="#">Factum Books</a></li>
                 <li><a href="#">Foreslag</a></li>
             </ul>
@@ -61,19 +63,85 @@
         <p class="line-break-2"></p>
     </section>
 
-    <section class="tider">
-        <h1>Åbent</h1>
-        <div class="prik"></div>
-        <p class="line-break-3"></p>
-        <h2>09:00 - 16:00</h2>
-        <a class="pil" href="#">
-            <i class="fas fa-arrow-circle-down"></i>
-        </a>
-    </section>
+    <!--Åbningstider start-->
+    <aside>
+        <div class="abningstider">
+            <h4 class="time">
+                <div id="open_close"></div>
+            </h4>
+            <img src="http://worldartsme.com/images/green-circle-clipart-1.jpg" id="cirkel">
+            <h4 class="tider"> |
+            </h4>
+            <h4 class="tider"> 09:00-16:00
+            </h4>
 
+            <div class="arrow-down" onclick="this.classList.toggle('active')" id="flip"></div>
+        </div>
+        <div id="panel">
+            <h5>Mandag - Torsdag</h5>
+            <p>09:00 - 16:00</p>
+            <h5>Fredag</h5>
+            <p>09:00 - 14:00</p>
+            <h5>Lørdag - Søndag</h5>
+            <p>Lukket</p>
+        </div>
+    </aside>
 
+    <script>
+        var data = [{},
+            {
+                open: 9,
+                close: 16
+            },
+            {
+                open: 9,
+                close: 16
+            },
+            {
+                open: 9,
+                close: 16
+            },
+            {
+                open: 9,
+                close: 16
+            },
+            {
+                open: 9,
+                close: 14
+            },
+        ];
 
+        var date = new Date();
+        var dayOfWeek = date.getDay(); // 0 is Sunday, 1 is Monday, etc...
+        var openingTimes = data[dayOfWeek];
+        var openClosed = false; // closed by default
 
+        // check that there are opening times for today
+        if (openingTimes.hasOwnProperty('open') && openingTimes.hasOwnProperty('close')) {
+            var hour = date.getHours()
+            openClosed = openingTimes.open <= hour && hour < openingTimes.close;
+        }
+        var msg = function() {
+            if (openClosed == true) {
+                return "Åbent";
+            } else {
+                return "Lukket";
+            }
+        }
+        $(document).ready(function() {
+            $("#open_close").html(msg());
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle('fast');
+            });
+        });
+    </script>
+
+    <!--Åbningstider slut-->
 
 </body>
 

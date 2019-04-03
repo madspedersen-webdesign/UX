@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Untitled document</title>
+    <meta name="description" content="Here you add the description of your content">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <section id="logo-burger">
+            <a id="logo" href="index.html"><img src="images/Logo.png" alt="Erhvervakadameiets logo"></a>
+            <label for="toggle">
+                <i class="fas fa-user"></i>
+            </label>
+        </section>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <li><a href="pensum.html">Pensum</a></li>
+                <li><a href="#">Factum Books</a></li>
+                <li><a href="#">Foreslag</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <!-- Navigation slut -->
+
+    <div class="search-box">
+        <input type="text" name="" class="search-txt" placeholder="Søg bog" />
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+
+
+
+    <main>
+
+
+
+
+        <section>
+            <div class="grid">
+                <h1>Pensum</h1>
+                <div id="flip">Semester .1</div>
+            </div>
+        </section>
+
+        <section id="pensum-list">
+            <div class="grid">
+
+                <img id="gds-1" class="gds" src="images/gds.png" alt="Graphic Design School">
+
+                <p class="title">Graphic Design School</p>
+                <br>
+                <p class="author">David Dabner</p>
+                <br>
+                <br>
+                <p class="description">Kursus: Design og Visualisation</p>
+
+                <section class="grid-items">
+                    <div class="grid-item">
+                        <p class="pris">145,00 kr</p>
+
+                        <p class="vejl-pris">Vejl. pris 199,00 kr</p>
+                    </div>
+                    <div class="grid-item">
+                        <button>Køb</button>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="grid">
+                <section>
+
+                    <a href="bog2.html">
+                        <img class="gds" src="images/gdmpi.jpg" alt="Grafisk design med Photoshop, Illustrator">
+                    </a>
+
+                    <p class="title">Grafisk design med Photoshop, Illustrator</p>
+                    <br>
+                    <p class="author">Anna Sofie Olesen, Anders Bennekou, Dani</p>
+                    <br>
+                    <br>
+                    <p class="description">Kursus: Kommunikation</p>
+
+                    <section class="grid-items">
+                        <div class="grid-item">
+                            <p class="pris">224,00 kr</p>
+
+                            <p class="vejl-pris">Vejl. pris 249,00 kr</p>
+                        </div>
+                        <div class="grid-item">
+                            <button>Køb</button>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+            <div class="panel">
+                <div class="grid">
+
+                    <section>
+
+                        <img class="gds" src="images/uxfb.jpg" alt="UX For Beginners">
+
+                        <p class="title">UX For Beginners</p>
+                        <br>
+                        <p class="author">Joel Marsh</p>
+                        <br>
+                        <br>
+                        <p class="description">Kursus: Kommunikation</p>
+
+                        <section class="grid-items">
+                            <div class="grid-item">
+                                <p class="pris">187,00 kr</p>
+
+                                <p class="vejl-pris">Vejl. pris 329,00 kr</p>
+                            </div>
+                            <div class="grid-item">
+                                <button>Køb</button>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <section>
+
+                    <img class="gds" src="images/placeholder.png" alt="Learning Web Design 5e">
+
+                    <p class="title">Learning Web Design 5e</p>
+                    <br>
+                    <p class="author">Robbins</p>
+                    <br>
+                    <br>
+                    <p class="description">Kursus: Programmering</p>
+
+                    <section class="grid-items">
+                        <div class="grid-item">
+                            <p class="pris">340,00 kr</p>
+
+                            <p class="vejl-pris">Vejl. pris 549,00 kr</p>
+                        </div>
+                        <div class="grid-item">
+                            <button>Køb</button>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div class="grid">
+
+                <section>
+
+                    <img class="gds" src="images/bmg.jpg" alt="Business Model Generation, eng udg.">
+
+                    <p class="title">Business Model Generation, eng udg.</p>
+                    <br>
+                    <p class="author">Osterwalder</p>
+                    <br>
+                    <br>
+                    <p class="description">Kursus: Design og Visualisation</p>
+
+                    <section class="grid-items">
+                        <div class="grid-item">
+                            <p class="pris">195,00 kr</p>
+
+                            <p class="vejl-pris">Vejl. pris 317,00 kr</p>
+                        </div>
+                        <div class="grid-item">
+                            <button>Køb</button>
+                        </div>
+                    </section>
+
+                </section>
+            </div>
+
+            <div class="grid">
+
+                <section>
+
+                    <img class="gds" src="images/bmg.jpg" alt="Business Model Generation, eng udg.">
+
+                    <br>
+                    <p class="bogtype">BOGPAKKEN INDEHOLDER ALLE</p>
+
+
+                    <p class="pris">195,00 kr</p>
+
+
+                    <div class="grid-item">
+                        <button class="green">Bestil bogpakke</button>
+                    </div>
+
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- joachim her -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#pensum-list").slideToggle("slow");
+            });
+        });
+    </script>
+    <!-- joachim her -->
+</body>
+
+</html>
